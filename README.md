@@ -18,8 +18,8 @@ convertCurrencyOfOrders($convertTo, $orderList, $responseFormat)
 - responseFormat (формат ожидаемого ответа)
 
 Затем развернул функционал в набор классов:
-OrderCurrencyConvert
-TestConvertCurrencyInOrders
+- OrderCurrencyConvert
+- TestConvertCurrencyInOrders
 
 Unit-тест на простую арифметику делать не вижу смысла. Кроме того, проверить вычисления абсолютно нереально, так как курсы валют меняются быстрее, чем происходит взаимодействие с сервисом. Из-за этого такой тест почти никогда не будет пройден.
 
