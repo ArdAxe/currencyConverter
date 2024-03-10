@@ -145,9 +145,8 @@ function Test_convertCurrencyInOrders() {
 	$LIST_OF_ORDERS = convertCurrencyInOrders($convertTo, $test, 'LIST_OF_ORDERS');
 	
 	// определяет ли функция совпадение валют
-	if(!(abs($LIST_OF_ORDERS[224456] - $test[224456]['value']) < 0.001)) {
-		$errors[] = "LIST_OF_ORDERS не определяет совпадение валют"; 
-	}
+	if(!(abs($LIST_OF_ORDERS[224456] - $test[224456]['value']) < 0.001))
+	{ $errors[] = "LIST_OF_ORDERS не определяет совпадение валют"; }
 	
 	// определяет ли функция нулевую сумму
 	if(!(abs($test[183068]['converted_value'] - $DTO_OF_ORDER[183068]->convertedCost) < 0.001))
