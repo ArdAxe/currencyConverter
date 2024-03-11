@@ -18,7 +18,8 @@ class OrderCurrencyConvert {
 	 *  
 	 *  @string $convertTo - 3-letter code of currency that you need convert to (код валюты, в которую нужно конвертировать)
 	 *  @array $orderList - array of orders (список заказов)
-	 *  @string $responseFormat - response format (флаг, указывающий формат возвращзаемого значения)
+	 *  @string $convertService - externel convertion service (массив данных для подключения к внешнему сервису)
+  	 *  @string $outputDataFormat - response format (флаг, указывающий формат возвращзаемого значения)
 	 *  
 	 *  return
 	 *    @array - list of orders ids with converted sums (список заказов с конвертированными суммами)
